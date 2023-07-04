@@ -73,7 +73,7 @@ nav.navbar{
 
 h1 {
     color: rgb(0, 83, 83);
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'Moderna_Demo';
 }
 span {
@@ -81,7 +81,9 @@ span {
     color: orange;
 }
 .iconos{
-    width: 50px;
+    display: flex;
+    align-items: end;
+    width: 40px;
 }
 
 header.cabecera {
@@ -112,7 +114,6 @@ header.cabecera {
 
 }
 img.img-medium{
-    /* width: 600px; */
     max-width: 600px;
     
 }
@@ -158,29 +159,17 @@ div.conocenos h2{
 
 /* estilo del contenedor servicios */
 section.contenedorPadre {
-    background-color: lightblue;
-    height: 650px;
-    width: 100%;
-    padding: 3px;
+    background-color:darkcyan;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    gap: 10px 20px;
+    gap: 20px 30px;
 }
-div.contenedorHijo {
-    font-weight: 600;
-    height: 100px;
-    background-color: antiquewhite;
-    border: 1px solid;
-    border-radius: 5px;
-    /* flex-grow: 1; */
 
-}
-div.contenedorHijo.hijoBueno{
-    /* flex-shrink: 1; */
-}
+
 /* estilo del mapa */
 div.mapa {
     text-align: center;
@@ -190,6 +179,16 @@ div.mapa {
 div.mapa h2{
     padding-bottom: 20px;
 }
+/* estilo del formulario contacto */
+
+section.contacttable{
+    justify-content: center;
+    padding: 50px;
+    background-color: darkcyan;
+    align-items: center;
+
+}
+/* fin estilo contacto */
 
 /* Estilo del footer */
 footer.pieDePagina{

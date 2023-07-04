@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/bootstrap-utilities.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Contacto</title>
 </head>
 <body>
@@ -24,18 +27,73 @@
     </div>
 
     </header>
-    <nav class="navbar">
-        <ul>
-
-            <li><a href="./index.html">INICIO</a></li>
-            <li><a href="./servicios.html">SERVICIOS</a></li>
-            <li><a href="./contacto.html">CONTACTO</a></li>
-            <li><a href="./noticias.html">NOTICIAS</a></li>
-            <li><a href="./congresos.html">CONGRESOS</a></li>
-        </ul>
-    </nav>
-
-    <section>
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navegacion</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Mas sobre nosotros
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./contacto.html">Contacto</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./congresos.html">Congresos</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="./noticias.html">Noticias</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Deshabilitado</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+  
+    <!-- <section>
         <form action="#">
             <div>
                 <label for="nombre">Nombre</label>
@@ -65,7 +123,40 @@
             </div>
 
         </form>
+    </section> -->
+
+<section class="contacttable form-control col-form-label-lg">
+    <form>
+        <div class="mb-3">
+            <label for="nombreusuario" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombreUsuario" placeholder="Ingrese su nombre">
+        </div>
+        <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellidoUsuario" placeholder="Ingrese su apellido">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Dirección de Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="mail@mail">
+          <div id="emailHelp" class="form-text">Nadie compartirá esta información</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+        </div>
+        <div class="mb-3 form-text">
+            <label for="mensaje">Dejanos tu consulta</label>
+            <textarea name="mensaje" id="" cols="40" rows="5"></textarea>
+        </div> 
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="checkbox">
+          <label class="form-check-label" for="checkbox">He revisado la información</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="reset" class="btn btn-danger">Cancelar</button>
+      </form>
     </section>
+
     <footer class="pieDePagina">
         <p>Estudio contable Erquicia\García</p>
 
@@ -77,4 +168,6 @@
         <a href="#introduccion">Ir Arriba</a>
     </footer>
 </body>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/bootstrap.bundle.js"></script>
 </html>
