@@ -21,20 +21,21 @@
 
 p {
     font-family: 'Rubik', sans-serif;
-
+    /* color: aliceblue; */
 }
 
 /* todo el cuerpo */
 
 section.page{
-    background-color: darkslategrey;
+    background-color: #2C3639;
 
 }
 /* BARRA DE NAVEGACION */
 nav.navbar{
     position: sticky;
+    
     top: 0;
-    background-color: rgb(127, 255, 212) !important;
+    background-color: #395B64 !important;
 
 }
 /* 
@@ -83,13 +84,15 @@ span {
 .iconos{
     display: flex;
     align-items: end;
-    width: 40px;
+    width: 60px;
 }
 
 header.cabecera {
     
+    padding: 20px 20px;;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     row-gap: 2rem;
     position: relative;
     width: 100%;
@@ -99,6 +102,13 @@ header.cabecera {
     background-repeat: no-repeat;
     background-size: cover;
 } 
+
+header.principal {
+    background-color: red;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
 
 .cabecera h1 {
     position: relative;
@@ -120,18 +130,23 @@ img.img-medium{
 
 /* FIN ESTILOS DEL HEADER */
 
-/* conocenos */
+/* ESTILOS DE LA PAGINA SERVICIOS */
 
-/* div.conocenos {
-
+div.title{
     display: flex;
-    flex-direction: column;  
-    justify-content: space-around;
-    padding: 50px;
+    background-color: #2C3639;
+    padding-top: 10px;
     align-items: center;
-    
+    justify-content: center;
+}
+h2.title{
+    background-color: antiquewhite;
 
-}*/
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+
+/* FIN ESTILOS SERVICIOS */
 div.conocenos p.intro {
     font-size: larger;
     text-align: center;
@@ -159,7 +174,7 @@ div.conocenos h2{
 
 /* estilo del contenedor servicios */
 section.contenedorPadre {
-    background-color:darkcyan;
+    background-color:#2C3639;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -198,6 +213,23 @@ footer.pieDePagina{
     align-items: center;
     justify-content: space-evenly;
     padding: 20px;
-    background-color: rgb(127, 255, 212);
+    background-color: #395B64;
 
+}
+
+
+@media screen and (max-width: 400px) {
+    h1{
+        font-size: 40px;
+    }
+
+    .cabecera{
+        padding: 10px 10px;
+    }
+    .iconos{
+        width: 40px;
+    }
+
+
+    
 }
