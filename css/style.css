@@ -115,6 +115,9 @@ header.principal {
     
     
 }
+
+
+/* ESTILOS DE LA PAG PRINCIPAL */
 .imagenPrincipal {
     display: flex;
     align-items: center;
@@ -127,9 +130,7 @@ img.img-medium{
     max-width: 600px;
     
 }
-
-/* FIN ESTILOS DEL HEADER */
-
+div
 /* ESTILOS DE LA PAGINA SERVICIOS */
 
 div.title{
