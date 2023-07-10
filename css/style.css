@@ -23,6 +23,12 @@ p {
     font-family: 'Rubik', sans-serif;
     /* color: aliceblue; */
 }
+p.blanco{
+    color: white;
+}
+h2.blanco{
+    color: white;
+}
 
 /* todo el cuerpo */
 
@@ -205,6 +211,17 @@ section.contacttable{
 
 }
 /* fin estilo contacto */
+
+
+
+/* estilos congresos */
+.c-item{
+    height: 480px;
+}
+.c-img{
+    height: 100%;
+    object-fit: cover;
+}
 
 /* Estilo del footer */
 footer.pieDePagina{
