@@ -12,7 +12,7 @@
 }
 
 
-/*Fuente local*/
+/*CUERPO Y Fuente local*/
  @font-face {
     font-family: "Moderna_Demo" ;
     src: url("../fonts/Moderna_Demo.ttf");
@@ -21,7 +21,7 @@
 
 p {
     font-family: 'Rubik', sans-serif;
-    /* color: aliceblue; */
+
 }
 p.blanco{
     color: white;
@@ -30,12 +30,12 @@ h2.blanco{
     color: white;
 }
 
-/* todo el cuerpo */
-
 section.page{
     background-color: #2C3639;
 
 }
+/* todo el cuerpo */
+
 /* BARRA DE NAVEGACION */
 nav.navbar{
 
@@ -43,36 +43,7 @@ nav.navbar{
     background-color: #395B64 !important;
 
 }
-/* 
-.navbar ul {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.navbar ul li{
-    
-    padding: 10px;
-    margin: 5px;
-    background-color: rgb(10, 198, 107);
-}
-.navbar ul li a {
-    color: darkslategray;
-} */
-/* FIN BARRA DE NAVEGACION */
-
-
-/* TABLA */
-.tabla{
-    color: blue;
-}
-
-#tabla{
-    border: 1px solid blue;
-}
-
-/* FIN TABLA*/
 
 
 /* ESTILOS DEL HEADER */
@@ -150,9 +121,20 @@ div.title{
 }
 h2.title{
     background-color: antiquewhite;
-
     padding: 10px 10px;
     border-radius: 8px;
+}
+
+/* estilo del contenedor servicios */
+section.contenedorPadre {
+    background-color:#2C3639;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px 30px;
 }
 
 
@@ -173,20 +155,8 @@ div.conocenos h2{
 }
 
 
-/* estilo del contenedor servicios */
-section.contenedorPadre {
-    background-color:#2C3639;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 20px 30px;
-}
 
-
-/* estilo del mapa */
+/* MAPA */
 div.mapa {
     text-align: center;
     padding: 20px;
@@ -195,7 +165,10 @@ div.mapa {
 div.mapa h2{
     padding-bottom: 20px;
 }
-/* estilo del formulario contacto */
+
+
+
+/*CONTACTO */
 
 section.contacttable{
     justify-content: center;
@@ -208,7 +181,7 @@ section.contacttable{
 
 
 
-/* estilos congresos */
+/* CONGRESOS */
 .c-item{
     height: 480px;
 }
@@ -217,7 +190,7 @@ section.contacttable{
     object-fit: cover;
 }
 
-/* Estilo del footer */
+/* FOOTER */
 footer.pieDePagina{
     display: flex;
     flex-wrap: wrap;
@@ -228,7 +201,7 @@ footer.pieDePagina{
     background-color: #395B64;
 
 }
-
+/* NOTICIAS */
 .ytvids {
     position: relative;
     padding-bottom: 56.25%;
@@ -246,6 +219,8 @@ footer.pieDePagina{
     padding-top: 10px;
     padding-bottom: 20px;
 }
+
+ /* MEDIA QUERIES QUE FUERON REEMPLAZADOS POR BOOTSTRAP EN SU MAYORIA */
 @media screen and (max-width: 400px) {
     h1{
         font-size: 40px;
