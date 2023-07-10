@@ -38,9 +38,11 @@
         </ul>
       </div>
     </header>
-    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Menú</a>
+        <a class="navbar-brand" href="#">
+          <img src="./img/icologo.jpeg" class="rounded" width="40" height="40" alt="">
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -104,51 +106,92 @@
       </div>
     </nav>
 
-    <section>
-      <form action="#">
-        <div>
-          <label for="nombre">Nombre</label>
-          <input
-            type="text"
-            name="nombre"
-            id="nombre"
-            placeholder="Ingrese su nombre"
-          />
-        </div>
 
-        <div>
-          <label for="apellido">Apellido</label>
-          <input
-            type="text"
-            name="apellido"
-            id="apellido"
-            placeholder="Ingrese su apellido"
-          />
-        </div>
-        <div>
-          <label for="dni">DNI</label>
-          <input type="text" id="dni" placeholder="DNI" />
-        </div>
+    <section class="page">
+      <div class="container-fluid" id="introduccion">
+        <div class="container overflow-y-auto">
+      <section class="contacttable form-control col-form-label-lg">
+        <form>
+          <div class="mb-3">
+            <label for="nombreusuario" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombreUsuario"
+              placeholder="Ingrese su nombre"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input
+              type="text"
+              class="form-control"
+              id="apellidoUsuario"
+              placeholder="Ingrese su apellido"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="dni" class="form-label">DNI</label>
+            <input
+              type="text"
+              class="form-control"
+              id="dni"
+              placeholder="DNI"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Dirección de Email</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="mail@mail"
+            />
+            <div id="emailHelp" class="form-text">
+              Nadie compartirá esta información
+            </div>
+          </div>
+          
+          <div class="mb-3 form-text">
+            <label for="mensaje" class="form-label">Descripción del congreso</label>
+            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+          
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="checkbox" />
+            <label class="form-check-label" for="checkbox"
+              >He revisado la información</label
+            >
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="reset" class="btn btn-danger">Cancelar</button>
+        </form>
+      </section>
+    </div>
+    </div>
 
-        <div>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="mail@mail" />
-        </div>
 
-        <div>
-          <button type="submit">Enviar</button>
-          <button type="reset">Cancelar</button>
-        </div>
-      </form>
-    </section>
     <footer class="pieDePagina">
-      <p>Estudio contable Erquicia\García</p>
-
-      <div>
+      <div class="container-fluid">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col col-xl-6">
+              <h4>Estudio contable Erquicia\García</h4>
+            </div>
+      <div class="col col-xl-4">
         <p>Tel. 12345678</p>
-        <p></p>
+        
       </div>
+
+      <div class="col col-xl-2">
       <a href="#introduccion">Ir Arriba</a>
+      </div>
+         </div>
+        </div>
+      </div>
     </footer>
   </body>
   <script src="./js/bootstrap.js"></script>
