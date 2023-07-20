@@ -19,7 +19,7 @@ p.blanco{
 h2.blanco{
     color: white;
 }
-section.page{
+main.wrapper{
     background-color: #2C3639;
 
 }
@@ -29,18 +29,18 @@ section.page{
 nav.navbar{
 
     top: 0;
-    background-color: #395B64 !important;
+    background-color: $colorFooter !important;
 
 }
 
 /* ESTILOS DEL HEADER */
 
 h1 {
-    color: rgb(0, 83, 83);
+    color: $colorPrincipal;
     font-size: 60px;
     font-family: 'Moderna_Demo';
     span{
-        color: orange;
+        color: $colorCaja;
     }
 }
 
@@ -95,14 +95,14 @@ div.title{
     justify-content: center;
 }
 h2.title{
-    background-color: antiquewhite;
+    background-color: $colorCaja;
     padding: 10px 10px;
     border-radius: 8px;
 }
 
 /* estilo del contenedor servicios */
 section.contenedorPadre {
-    background-color:#2C3639;
+    background-color:$colorSecundario;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -122,7 +122,7 @@ div.conocenos p.intro {
     padding-bottom: 50px; 
 }
 div.conocenos h2{
-    background-color: antiquewhite;
+    background-color: $colorCaja;
     padding: 10px;
     border-radius: 3px;
    
@@ -141,7 +141,7 @@ div.mapa {
 section.contacttable{
     justify-content: center;
     padding: 50px;
-    background-color: darkcyan;
+    background-color: $colorFooter;
     align-items: center;
 
 }
@@ -185,6 +185,10 @@ footer.pieDePagina{
     justify-content: space-evenly;
     padding: 20px;
     background-color: #395B64;
+    h4, p{
+        color:white
+    }
+   
 
 }
 /* FIN FOOTER */
