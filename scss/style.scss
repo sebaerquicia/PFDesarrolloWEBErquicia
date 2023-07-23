@@ -1,6 +1,7 @@
 @import "partials/reset";
 @import "partials/queries";
 @import "partials/variables";
+
 /* Selector universal o reset */
 
 /*CUERPO Y Fuente local*/
@@ -32,12 +33,11 @@ nav.navbar{
     background-color: $colorFooter !important;
 
 }
-
 /* ESTILOS DEL HEADER */
 
 h1 {
     color: $colorPrincipal;
-    font-size: 60px;
+    font-size: 60px /* $fontBig */ ;
     font-family: 'Moderna_Demo';
     span{
         color: $colorCaja;
@@ -125,6 +125,7 @@ div.conocenos h2{
     background-color: $colorCaja;
     padding: 10px;
     border-radius: 3px;
+   /*  font-size: $fontMedium; */
    
 }
 /* MAPA */
@@ -133,6 +134,7 @@ div.mapa {
     padding: 20px;
     h2 {
         padding-bottom: 20px;
+        /* font-size: $fontMedium; */
     }
 }
 

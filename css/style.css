@@ -20,6 +20,7 @@
   }
 }
 /* Gama de colores */
+/* Tamanio de fuentes */
 /* Selector universal o reset */
 /*CUERPO Y Fuente local*/
 @font-face {
@@ -137,6 +138,7 @@ div.conocenos h2 {
   background-color: antiquewhite;
   padding: 10px;
   border-radius: 3px;
+  /*  font-size: $fontMedium; */
 }
 
 /* MAPA */
@@ -146,6 +148,7 @@ div.mapa {
 }
 div.mapa h2 {
   padding-bottom: 20px;
+  /* font-size: $fontMedium; */
 }
 
 /*CONTACTO */
