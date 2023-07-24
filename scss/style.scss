@@ -1,5 +1,5 @@
 @import "partials/reset";
-@import "partials/queries";
+
 @import "partials/variables";
 
 /* Selector universal o reset */
@@ -8,7 +8,8 @@
  @font-face {
     font-family: "Moderna_Demo" ;
     src: url("../fonts/Moderna_Demo.ttf");
-    
+    font-family: "YsabeauSC-Regular";
+    src: url("../fonts/YsabeauSC-Regular.ttf");
 }
 p{
     font-family: 'Rubik', sans-serif;
@@ -22,6 +23,7 @@ h2.blanco{
 }
 main.wrapper{
     background-color: #2C3639;
+   
 
 }
 /* todo el cuerpo */
@@ -37,8 +39,8 @@ nav.navbar{
 
 h1 {
     color: $colorPrincipal;
-    font-size: 60px /* $fontBig */ ;
-    font-family: 'Moderna_Demo';
+    font-size: $fontBig ;
+    font-family: 'YsabeauSC-Regular';
     span{
         color: $colorCaja;
     }
@@ -195,3 +197,4 @@ footer.pieDePagina{
 }
 /* FIN FOOTER */
 
+@import "partials/queries";

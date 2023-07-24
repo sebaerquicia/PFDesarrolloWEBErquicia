@@ -10,19 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
       rel="stylesheet"
     />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/bootstrap-utilities.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/logofavicon.png" type="image/x-icon">
     <title>Contacto</title>
   </head>
   <body>
     <header class="cabecera">
-      <div class="principal">
+      <div class="principal" data-aos="zoom-in">
         <h1>Contacto</h1>
         <p>Ponete en contacto con nosotros</p>
       </div>
-      <div class="redes.container">
+      <div class="redes.container" data-aos="zoom-in-left">
         <ul>
           <li>
             <a href="https://www.instagram.com/estudioerquiciagarcia/"
@@ -89,7 +90,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Deshabilitado</a>
+              <a class="nav-link disabled">Próximamente</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -191,6 +192,10 @@
     </div>
   </div>
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
   </body>
   <script src="./js/bootstrap.js"></script>
   <script src="./js/bootstrap.bundle.js"></script>
