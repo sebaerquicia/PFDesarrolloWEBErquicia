@@ -43,7 +43,7 @@ nav.navbar {
 /* ESTILOS DEL HEADER */
 h1 {
   color: rgb(0, 83, 83);
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-family: "YsabeauSC-Regular";
 }
 h1 span {
@@ -197,6 +197,8 @@ footer.pieDePagina h4, footer.pieDePagina p {
 
 /* FIN FOOTER */
 /* MEDIA QUERIES QUE FUERON REEMPLAZADOS POR BOOTSTRAP EN SU MAYORIA */
+/* Tamanio de fuentes */
+/* Gama de colores */
 /* Tamanio de fuentes */
 @media screen and (max-width: 576px) {
   h1 {

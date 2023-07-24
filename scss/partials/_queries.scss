@@ -1,10 +1,6 @@
 /* MEDIA QUERIES QUE FUERON REEMPLAZADOS POR BOOTSTRAP EN SU MAYORIA */
 /* Tamanio de fuentes */
-
-$fontSmall: 1.8rem;
-$fontNormal: 2rem;
-$fontMedium: 3rem;
-$fontBig: 3.5rem;
+@import "variables";
 
 
 @media screen and (max-width: 576px) {
