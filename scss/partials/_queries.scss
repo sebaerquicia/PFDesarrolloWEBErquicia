@@ -1,10 +1,11 @@
 /* MEDIA QUERIES QUE FUERON REEMPLAZADOS POR BOOTSTRAP EN SU MAYORIA */
 /* Tamanio de fuentes */
 
-$fontSmall: .8rem;
-$fontNormal: 2.2rem;
+$fontSmall: 1.8rem;
+$fontNormal: 2rem;
 $fontMedium: 3rem;
 $fontBig: 3.5rem;
+
 
 @media screen and (max-width: 576px) {
     h1 {
@@ -18,7 +19,18 @@ $fontBig: 3.5rem;
         width: 80px;
         padding: 15px 15px;
     }
-
+    header.cabecera {
+        padding: 5px 5px; 
+        row-gap: 0rem;
+        position: relative;
+        width: 100%;
+        height: 100%;
+      
+    } 
+    div.tarjetas {
+        padding: 10px 10px ;
+        padding-top: 2px;
+    }
 }
 @media screen and (min-width:576px) and (max-width: 992px){
 
@@ -30,4 +42,10 @@ $fontBig: 3.5rem;
         width: fit-content;
         padding: 5px 5px;
     }
+    header.cabecera {
+
+        padding: 5px 5px;
+        row-gap: 1rem;
+    }
+
 }
