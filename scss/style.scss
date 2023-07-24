@@ -2,6 +2,8 @@
 
 @import "partials/variables";
 
+@import "partials/mixins";
+
 /* Selector universal o reset */
 
 /*CUERPO Y Fuente local*/
@@ -16,7 +18,8 @@ p{
 
 }
 p.blanco{
-    color: white;
+    /* color: white; */
+    @include fontShell (white, $fontSmall, bold); 
 }
 h2.blanco{
     color: white;

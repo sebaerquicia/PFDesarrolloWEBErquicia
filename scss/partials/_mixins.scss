@@ -1,0 +1,8 @@
+@import "variables";
+
+@mixin fontShell ($ar1, $ar2, $ar3){
+    color: $ar1;
+    font-size: $ar2;
+    font-weight: $ar3;
+
+}

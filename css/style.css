@@ -9,6 +9,8 @@
 
 /* Gama de colores */
 /* Tamanio de fuentes */
+/* Gama de colores */
+/* Tamanio de fuentes */
 /* Selector universal o reset */
 /*CUERPO Y Fuente local*/
 @font-face {
@@ -22,7 +24,10 @@ p {
 }
 
 p.blanco {
+  /* color: white; */
   color: white;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 h2.blanco {
