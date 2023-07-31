@@ -24,18 +24,19 @@ h2.blanco{
     color: white;
 }
 main.wrapper{
-    background-color: #2C3639;
-   
+    background-color: #9DB2BF;
+   box-shadow: 0 3px 10px rgba(33, 37, 41, 0.2);
 
 }
 /* todo el cuerpo */
 
 /* BARRA DE NAVEGACION */
-nav.navbar{
+.navbar{
+    transition: all 0.6s;
+}
 
-    top: 0;
-    background-color: $colorFooter !important;
-
+.navbar-scrolled{
+    background-color: #212529 ;
 }
 /* ESTILOS DEL HEADER */
 
@@ -48,34 +49,48 @@ h1 {
     }
 }
 
-
-img.iconos{
-    display: flex;
-    align-items: end;
-    padding:5px 5px;
-    width: 70px;
+.scroll{
+    padding-top: 50px;
 }
 
 
+
+header.cabecera1 {
+    
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    position: relative;
+    height: 100vh;
+    /* width: 100vw; */
+    background-image: url(../img/fondo.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover; 
+    background-attachment: fixed;
+
+} 
 header.cabecera {
     
-    padding: 20px 20px;;
+    padding: 20px 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    row-gap: 2rem;
+    object-fit: cover;
     position: relative;
-    width: 100%;
+    /* width: 100vw; */
     height: 170px;
     background-image: url(../img/fondo.jpeg);
     background-position: center 0;
     background-repeat: no-repeat;
     background-size: cover;
-    h1 {
-        position: relative;
-        
-    }    
-} 
+}
+
+section.conoce{
+    padding-top: 80px;
+}
 /* ESTILOS DE LA PAG PRINCIPAL */
 div.imagenPrincipal {
     display: flex;
@@ -86,6 +101,7 @@ div.imagenPrincipal {
 
 }
 
+
 div.tarjetas {
     padding: 20px 20px 20px 20px;
     
@@ -95,7 +111,7 @@ div.tarjetas {
 
 div.title{
     display: flex;
-    background-color: #2C3639;
+    
     padding-top: 10px;
     align-items: center;
     justify-content: center;
@@ -117,22 +133,32 @@ section.contenedorPadre {
     justify-content: space-evenly;
     gap: 20px 30px;
 }
+
 /* FIN ESTILOS SERVICIOS */
 
 /* Estilos de Conocenos */
-div.conocenos p.intro {
-    font-size: larger;
+div.conocenos {
+    /* background-image: url(../img/fondo.jpeg); */
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    h2{
+        background-color: $colorCaja;
+        padding: 10px;
+        border-radius: 3px;
+        font-size: $fontNormal;
+    }
+    p.intro{
+    font-size: $fontNormal;
     text-align: center;
-   
     padding-top: 20px;
     padding-bottom: 50px; 
-}
-div.conocenos h2{
-    background-color: $colorCaja;
-    padding: 10px;
-    border-radius: 3px;
-   /*  font-size: $fontMedium; */
-   
+    }
+    p.flotante{
+        font-size: $fontSmall;
+    }
+ 
 }
 /* MAPA */
 div.mapa {
@@ -198,7 +224,14 @@ footer.pieDePagina{
         color:white
     }
    
+   
 
+}
+.redes{
+    img{
+        width: 50px;
+        height: 50px;
+    }
 }
 /* FIN FOOTER */
 

@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -16,8 +17,8 @@
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/bootstrap.css" />
-    <link rel="stylesheet" href="./css/bootstrap-utilities.css" />
+  <!--   <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/bootstrap-utilities.css" /> -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="./img/logofavicon.png" type="image/x-icon">
 
@@ -33,34 +34,12 @@
 
   <body>
    
-    <header class="cabecera">
-      <div class="container-fluid animate__animated animate__fadeInDown" >
-        <h1>Erquicia<span>\</span>Garcia</h1>
-        <p>Estudio contable radicado en la ciudad de Córdoba</p>
-      </div>
-      <div class="redes.container animate__animated animate__slideInDown" >
-        <ul>
-          <li>
-            <a href="https://www.instagram.com/estudioerquiciagarcia/"
-              ><img class="iconos" src="./img/logoinsta.png" alt="Instagram"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="https://ar.linkedin.com/in/hern%C3%A1n-j-erquicia-966176a5?original_referer=https%3A%2F%2Fwww.google.com%2F"
-              class="linkedin"
-              ><img class="iconos" src="./img/logolinkedin.png" alt="LinkedIn"
-            /></a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    
 
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark ">
       <div class="container-fluid"> 
           <a class="navbar-brand" href="./index.html">
-            <img src="./img/icologo.jpeg" class="rounded" width="40" height="40" alt="icono">
+            <img src="./img/icologo.jpeg" class="rounded" width="40" height="40" alt="logo">
           </a>
         <button
           class="navbar-toggler"
@@ -73,8 +52,8 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="container collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./index.html"
                 >Inicio</a
@@ -83,16 +62,17 @@
             <li class="nav-item">
               <a class="nav-link" href="./pages/servicios.html">Servicios</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Más sobre nosotros
-              </a>
+            <li>
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./pages/congresos.html">Congresos</a>
+            </li>
+            
+            <li>
+              <a class="nav-link" href="./pages/noticias.html">Noticias</a>
+            </li>
+
               <ul class="dropdown-menu">
                 <li>
                   <a class="dropdown-item" href="./pages/contacto.html">Contacto</a>
@@ -106,75 +86,59 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Próximamente</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Buscar
-            </button>
-          </form>
         </div>
       </div>
     </nav>
+    <header class="cabecera1 container-fluid text-center">
+ 
+      <div class="presentacion text-center">
 
-<main class="wrapper">
-<div class="container-fluid">
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-          
-       <div class="imagenPrincipal" data-aos="flip-down">
-         <img
-              id="introduccion"
-              class="img-fluid object-fit-cover rounded"
-              src="./img/logo.jpeg"
-              alt="logo"
-            />
+         <div class="row-cols-1 titulo animate__animated animate__fadeInDown">
+            <h1>Erquicia<span>\</span>Garcia</h1>
+          </div>
+          <div class="row-cols-1">
+            <h2 style="color: #212529; ">Estudio contable radicado en la ciudad de Córdoba</h2>
+          </div>
+          <div class="row-cols-1 scroll">
+          <a href="#intro"><img src="./img/scrollDown.png" alt="scrolldown" style="opacity: 70%;"></a>
         </div>
       </div>
+  
 
-        <div class="col-lg-3">
-          <div class="mapa">
-            <h2 class="blanco">Encontranos en nuestro Edificio</h2>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.03828706787!2d-64.19421235!3d-31.3994532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses!2sar!4v1686358190405!5m2!1ses!2sar"
-              width="100%"
-              height="80%"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-    </div>
 
+</header>
+  
+<main class="wrapper">
+
+    <section class="conoce" id="intro">
+      <div class="container text-center">
       <div class="row">
-        <div class="col">
-          <div class="conocenos">
-            <h2>Conocenos!</h2>
+        <div class="col conocenos">
+        
+            <h2>Conocenos</h2>
 
-            <p class="intro blanco">
+            <p class="intro">
               Estudio Contable con más de 20 años asesorando pymes. Con amplia
-              vocacion de servicio, profesionalismo,
+              vocación de servicio, profesionalismo,
               confidencialidad, integridad y respeto.
             </p>
-            <p class="flotante blanco">
-              Somos Hernán Erquicia y Verónica García, dos contadores
-              independientes con mucha formación y conocimento en impuestos y
+
+          </div>
+          </div>
+          <div class="row">
+
+            <h3 class="flotante">
+              Somos Hernán Erquicia y Verónica García. Contadores
+              independientes con mucha formación y conocimento en asesoría de impuestos y
               laboral. 
-            </p>
+            </h3>
           </div>
         </div>
-      </div>
+        
+    </section>
+
+<div class="container-fluid">
+<div class="container text-center">
 
 
       <div class="row">       
@@ -218,36 +182,117 @@
     </div>
   </div>
 
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6 col-lg-5">
+       <div class="mapa">
+        <h4 class=>Encontranos en nuestro Edificio</h4>
+         <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.03828706787!2d-64.19421235!3d-31.3994532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses!2sar!4v1686358190405!5m2!1ses!2sar"
+            width="70%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+      </div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+
 </main>
 
 
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 text-warning">Erquicia\García</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste in facilis provident optio dolores eaque aspernatur
+               recusandae magni ab quibusdam. Vero quam tempore exercitationem officiis laborum quidem. Qui, aperiam dolor?</p>
 
-    
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 text-warning">Servicios</h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;">Asesoria General</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;">Impuestos</a>
+            </p>
 
-    <footer class="pieDePagina">
-      <div class="container-fluid">
-        <div class="container text-center">
-          <div class="row">
-            <div class="col col-xl-6">
-              <h4>Estudio contable Erquicia\García</h4>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;">Sueldos</a>
+            </p>
+
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;">Laboral</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;">Monotributo</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 text-warning">Contacto</h5>
+            <p>
+              <i class="fas fa-home mr-3"></i>Córdoba Capital,Córdoba, Arg
+            </p>
+            <p>
+              <i class="fas fa-home mr-3"></i>erquiciagarcia@gmail.com
+            </p>
+            <p>
+              <i class="fas fa-home mr-3"></i>+54 9 351 5423532
+            </p>
+            <div class="redes">
+
+              <p>
+                <a href="https://www.instagram.com/estudioerquiciagarcia/"><img src="./img/instagramicon.png" alt="Instagram"></a>
+              </p>
+              <p>
+                <a href="#"><img src="./img/linkedinicon.png" alt="Linkedin"></a>
+              </p>
             </div>
-      <div class="col col-xl-4">
-        <p>Tel. 12345678</p>
-        
-      </div>
+            
 
-      <div class="col col-xl-2">
-      <a href="#introduccion">Ir Arriba</a>
-      </div>
-         </div>
+          </div>
+          <div class="row align-items-center">
+
+            <div class="col-md-7 col-lg-8">
+              <p>Copyright 2023 Todos los derechos reservados por:
+                <a href="#" style="text-decoration: none;">
+                <strong class="text-warning">Estudio Erquicia\Garcia</strong></a></p>
+
+            </div>
+
+          </div>
         </div>
       </div>
+
+
     </footer>
+    <script>
+      const navEl = document.querySelector('.navbar');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 56){
+          navEl.classList.add('navbar-scrolled');
+        } else if(window.scrollY < 56){
+          navEl.classList.remove ('navbar-scrolled');
+        }
+
+
+      });
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-  </body>
-  <script src="./js/bootstrap.js"></script>
-  <script src="./js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+ <!--  <script src="./js/bootstrap.js"></script>
+  <script src="./js/bootstrap.bundle.js"></script> -->
+</body>
 </html>

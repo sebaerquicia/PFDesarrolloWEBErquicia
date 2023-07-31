@@ -15,17 +15,20 @@
         width: 80px;
         padding: 15px 15px;
     }
-    header.cabecera {
+    /* header.cabecera {
         padding: 5px 5px; 
         row-gap: 0rem;
         position: relative;
         width: 100%;
         height: 100%;
       
-    } 
+    }  */
     div.tarjetas {
         padding: 10px 10px ;
         padding-top: 2px;
+    }
+    div.conocenos p.intro{
+        font-size: $fontSmall;
     }
 }
 @media screen and (min-width:576px) and (max-width: 992px){

@@ -8,8 +8,18 @@
 }
 
 /* Gama de colores */
+/* $colorPrincipal:  rgb(0, 83, 83);
+$colorSecundario:  #2C3639;
+$colorCaja:  antiquewhite;
+$colorTabla: darkcyan;
+$colorFooter: #395B64; */
 /* Tamanio de fuentes */
 /* Gama de colores */
+/* $colorPrincipal:  rgb(0, 83, 83);
+$colorSecundario:  #2C3639;
+$colorCaja:  antiquewhite;
+$colorTabla: darkcyan;
+$colorFooter: #395B64; */
 /* Tamanio de fuentes */
 /*CUERPO Y Fuente local*/
 @font-face {
@@ -25,7 +35,7 @@ p {
 p.blanco {
   /* color: white; */
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -34,49 +44,66 @@ h2.blanco {
 }
 
 main.wrapper {
-  background-color: #2C3639;
+  background-color: #9DB2BF;
+  box-shadow: 0 3px 10px rgba(33, 37, 41, 0.2);
 }
 
 /* todo el cuerpo */
 /* BARRA DE NAVEGACION */
-nav.navbar {
-  top: 0;
-  background-color: #395B64 !important;
+.navbar {
+  transition: all 0.6s;
+}
+
+.navbar-scrolled {
+  background-color: #212529;
 }
 
 /* ESTILOS DEL HEADER */
 h1 {
-  color: rgb(0, 83, 83);
-  font-size: 3.5rem;
+  color: #27374D;
+  font-size: 6rem;
   font-family: "YsabeauSC-Regular";
 }
 h1 span {
-  color: antiquewhite;
+  color: #DDE6ED;
 }
 
-img.iconos {
+.scroll {
+  padding-top: 50px;
+}
+
+header.cabecera1 {
   display: flex;
-  align-items: end;
-  padding: 5px 5px;
-  width: 70px;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  position: relative;
+  height: 100vh;
+  /* width: 100vw; */
+  background-image: url(../img/fondo.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 header.cabecera {
   padding: 20px 20px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-  row-gap: 2rem;
+  object-fit: cover;
   position: relative;
-  width: 100%;
+  /* width: 100vw; */
   height: 170px;
   background-image: url(../img/fondo.jpeg);
   background-position: center 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
-header.cabecera h1 {
-  position: relative;
+
+section.conoce {
+  padding-top: 80px;
 }
 
 /* ESTILOS DE LA PAG PRINCIPAL */
@@ -95,21 +122,20 @@ div.tarjetas {
 /* ESTILOS DE LA PAGINA SERVICIOS */
 div.title {
   display: flex;
-  background-color: #2C3639;
   padding-top: 10px;
   align-items: center;
   justify-content: center;
 }
 
 h2.title {
-  background-color: antiquewhite;
+  background-color: #DDE6ED;
   padding: 10px 10px;
   border-radius: 8px;
 }
 
 /* estilo del contenedor servicios */
 section.contenedorPadre {
-  background-color: #2C3639;
+  background-color: #9DB2BF;
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -121,18 +147,27 @@ section.contenedorPadre {
 
 /* FIN ESTILOS SERVICIOS */
 /* Estilos de Conocenos */
+div.conocenos {
+  /* background-image: url(../img/fondo.jpeg); */
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+div.conocenos h2 {
+  background-color: #DDE6ED;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 2.4rem;
+}
 div.conocenos p.intro {
-  font-size: larger;
+  font-size: 2.4rem;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 50px;
 }
-
-div.conocenos h2 {
-  background-color: antiquewhite;
-  padding: 10px;
-  border-radius: 3px;
-  /*  font-size: $fontMedium; */
+div.conocenos p.flotante {
+  font-size: 1.5rem;
 }
 
 /* MAPA */
@@ -149,7 +184,7 @@ div.mapa h2 {
 section.contacttable {
   justify-content: center;
   padding: 50px;
-  background-color: #395B64;
+  background-color: #27374D;
   align-items: center;
 }
 
@@ -199,14 +234,24 @@ footer.pieDePagina h4, footer.pieDePagina p {
   color: white;
 }
 
+.redes img {
+  width: 50px;
+  height: 50px;
+}
+
 /* FIN FOOTER */
 /* MEDIA QUERIES QUE FUERON REEMPLAZADOS POR BOOTSTRAP EN SU MAYORIA */
 /* Tamanio de fuentes */
 /* Gama de colores */
+/* $colorPrincipal:  rgb(0, 83, 83);
+$colorSecundario:  #2C3639;
+$colorCaja:  antiquewhite;
+$colorTabla: darkcyan;
+$colorFooter: #395B64; */
 /* Tamanio de fuentes */
 @media screen and (max-width: 576px) {
   h1 {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
   div.cabecera {
     padding: 10px 10px;
@@ -215,21 +260,25 @@ footer.pieDePagina h4, footer.pieDePagina p {
     width: 80px;
     padding: 15px 15px;
   }
-  header.cabecera {
-    padding: 5px 5px;
-    row-gap: 0rem;
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
+  /* header.cabecera {
+      padding: 5px 5px; 
+      row-gap: 0rem;
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+  }  */
   div.tarjetas {
     padding: 10px 10px;
     padding-top: 2px;
   }
+  div.conocenos p.intro {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
   h1 {
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
   img.iconos {
     width: fit-content;
