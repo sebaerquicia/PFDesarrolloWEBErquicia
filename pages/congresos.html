@@ -41,9 +41,9 @@
       </div>
       </header>
  
-          <nav class="navbar navbar-expand-lg fixed-top navbar-dark ">
+          <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
             <div class="container-fluid"> 
-                <a class="navbar-brand" href="./index.html">
+                <a class="navbar-brand" href="../index.html">
                   <img src="../img/icologo.jpeg" class="rounded" width="40" height="40" alt="logo">
                 </a>
               <button
@@ -60,7 +60,7 @@
               <div class="container collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html"
+                    <a class="nav-link" aria-current="page" href="../index.html"
                       >Inicio</a
                     >
                   </li>
@@ -71,7 +71,7 @@
                     <a class="nav-link" href="./contacto.html">Contacto</a>
                   </li>
                   <li>
-                    <a class="nav-link" href="./congresos.html">Congresos</a>
+                    <a class="nav-link active" href="./congresos.html">Congresos</a>
                   </li>
                   
                   <li>
@@ -265,8 +265,8 @@
           <i class="fas fa-home mr-3"></i>+54 9 351 5423532
         </p>
         <div class="redes">  
-            <a href="https://www.instagram.com/estudioerquiciagarcia/"><img src="../img/instagramicon.png" alt="Instagram"></a>
-            <a href="#"><img src="../img/linkedinicon.png" alt="Linkedin"></a>
+            <a href="https://www.instagram.com/estudioerquiciagarcia/" target=”_blank”><img src="../img/instagramicon.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/hern%C3%A1n-j-erquicia-966176a5/?originalSubdomain=ar" target=”_blank”><img src="../img/linkedinicon.png" alt="Linkedin"></a>
         </div>
         
 
@@ -286,19 +286,7 @@
 
 
 </footer>
-<script>
-  const navEl = document.querySelector('.navbar');
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY >= 56){
-      navEl.classList.add('navbar-scrolled');
-    } else if(window.scrollY < 56){
-      navEl.classList.remove ('navbar-scrolled');
-    }
-
-
-  });
-</script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
