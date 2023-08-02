@@ -200,7 +200,7 @@ div.mapa h2 {
 section.contacttable {
   justify-content: center;
   padding: 50px;
-  background-color: #27374D;
+  background-color: #526D82;
   align-items: center;
 }
 
@@ -217,6 +217,10 @@ section.contacttable {
 
 /* Fin congresos */
 /* NOTICIAS */
+div.noti {
+  padding-top: 20px;
+}
+
 div.ytvids {
   position: relative;
   padding-bottom: 56.25%;

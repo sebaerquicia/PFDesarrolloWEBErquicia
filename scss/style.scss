@@ -196,7 +196,7 @@ div.mapa {
 section.contacttable{
     justify-content: center;
     padding: 50px;
-    background-color: $colorFooter;
+    background-color: $colorTabla;
     align-items: center;
 
 }
@@ -213,6 +213,9 @@ section.contacttable{
 /* Fin congresos */
 
 /* NOTICIAS */
+div.noti{
+    padding-top: 20px;
+}
 div.ytvids {
     position: relative;
     padding-bottom: 56.25%;
