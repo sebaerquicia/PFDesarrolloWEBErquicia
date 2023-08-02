@@ -17,7 +17,7 @@ p{
 
 }
 p.blanco{
-    /* color: white; */
+    
     @include fontShell (white, $fontSmall, bold); 
 }
 h2.blanco{
@@ -29,7 +29,24 @@ main.wrapper{
 
 }
 /* todo el cuerpo */
-
+/* boton wsp */
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+  }
 /* BARRA DE NAVEGACION */
 .navbar{
     transition: all 0.6s;
@@ -137,27 +154,29 @@ section.contenedorPadre {
 /* FIN ESTILOS SERVICIOS */
 
 /* Estilos de Conocenos */
-div.conocenos {
-    /* background-image: url(../img/fondo.jpeg); */
+section.conoce{
+    
+    background-image: url(../img/bluebg.png);
     background-position: center 0;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+div.conocenos {
+
     h2{
         background-color: $colorCaja;
         padding: 10px;
-        border-radius: 3px;
+        border-radius: 5px;
         font-size: $fontNormal;
     }
-    p.intro{
-    font-size: $fontNormal;
+    p{
+    font-size: ($fontNormal/2);
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 50px; 
+    padding-top: 15px;
+    padding-bottom: 15px; 
     }
-    p.flotante{
-        font-size: $fontSmall;
-    }
+   
  
 }
 /* MAPA */
