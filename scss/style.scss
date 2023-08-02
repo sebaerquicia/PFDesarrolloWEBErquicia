@@ -122,18 +122,19 @@ div.imagenPrincipal {
 div.tarjetas {
     padding: 20px 20px 20px 20px;
     
+    
 }
 
 /* ESTILOS DE LA PAGINA SERVICIOS */
 
 div.title{
     display: flex;
-    
     padding-top: 10px;
     align-items: center;
     justify-content: center;
 }
 h2.title{
+    
     background-color: $colorCaja;
     padding: 10px 10px;
     border-radius: 8px;
