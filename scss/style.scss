@@ -109,9 +109,6 @@ header.cabecera {
     background-size: cover;
 }
 
-section.conoce{
-    padding-top: 80px;
-}
 /* ESTILOS DE LA PAG PRINCIPAL */
 div.imagenPrincipal {
     display: flex;
@@ -167,6 +164,7 @@ section.conoce{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    padding-top: 80px;
 
 }
 section.cartas{

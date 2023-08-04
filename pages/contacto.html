@@ -97,12 +97,13 @@
  
 
     <main class="wrapper">
-    <div class="container" style="display: flex; padding: 20px 20px;" id="introduccion">
-      <div class="container overflow-y-auto">
+      <section class="conoce">
+    <div class="container" data-aos="zoom-out">
+      <div class="container overflow-y-auto col-lg-8 col-md-10">
     <section class="contacttable form-control col-form-label-lg">
       <form>
         <div class="mb-3">
-          <label for="nombreusuario" class="form-label">Nombre</label>
+          <label for="nombreusuario" class="form-label" style="color: white">Nombre</label>
           <input
             type="text"
             class="form-control"
@@ -111,7 +112,7 @@
           />
         </div>
         <div class="mb-3">
-          <label for="apellido" class="form-label">Apellido</label>
+          <label for="apellido" class="form-label" style="color: white">Apellido</label>
           <input
             type="text"
             class="form-control"
@@ -120,7 +121,7 @@
           />
         </div>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"
+          <label for="exampleInputEmail1" class="form-label" style="color: white"
             >Dirección de Email</label
           >
           <input
@@ -130,27 +131,27 @@
             aria-describedby="emailHelp"
             placeholder="mail@mail"
           />
-          <div id="emailHelp" class="form-text">
+          <div id="emailHelp" class="form-text" style="color: white">
             Nadie compartirá esta información
           </div>
         </div>
         <div class="mb-3 form-text">
-          <label for="mensaje" class="form-label">Dejanos tu consulta</label>
+          <label for="mensaje" class="form-label" style="color: white">Dejanos tu consulta</label>
           <textarea class="form-control" id="mensaje" rows="3"></textarea>
         
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="checkbox" />
-          <label class="form-check-label" for="checkbox"
+          <label class="form-check-label" for="checkbox" style="color: white"
             >He revisado la información</label
           >
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-        <button type="reset" class="btn btn-danger">Cancelar</button>
+        <button type="submit" class="btn btn-primary btn-success">Enviar</button>
       </form>
     </section>
   </div>
   </div>
+</section>
 </main>
 
 <footer class="bg-dark text-white pt-5 pb-4">
