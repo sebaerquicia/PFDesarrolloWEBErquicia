@@ -27,6 +27,60 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark ">
+      <div class="container"> 
+          <a class="navbar-brand" href="../index.html">
+            <img src="../img/icologo.jpeg" class="rounded" width="40" height="40" alt="logo">
+          </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./servicios.html">Servicios</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./congresos.html">Congresos</a>
+            </li>
+            
+            <li>
+              <a class="nav-link active" href="./noticias.html">Noticias</a>
+            </li>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./contacto.html">Contacto</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./congresos.html">Congresos</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href=".noticias.html">Noticias</a>
+                </li>
+              </ul>
+            </li>
+        </div>
+      </div>
+    </nav>
+
     <header class="cabecera container-fluid text-center">
  
       <div class="text-center">
@@ -41,70 +95,17 @@
       </div>
       </header>
  
-          <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-            <div class="container-fluid"> 
-                <a class="navbar-brand" href="../index.html">
-                  <img src="../img/icologo.jpeg" class="rounded" width="40" height="40" alt="logo">
-                </a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="container collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.html"
-                      >Inicio</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./servicios.html">Servicios</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
-                  </li>
-                  <li>
-                    <a class="nav-link" href="./congresos.html">Congresos</a>
-                  </li>
-                  
-                  <li>
-                    <a class="nav-link active" href="./noticias.html">Noticias</a>
-                  </li>
-      
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a class="dropdown-item" href="./contacto.html">Contacto</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="./congresos.html">Congresos</a>
-                      </li>
-                      <li><hr class="dropdown-divider" /></li>
-                      <li>
-                        <a class="dropdown-item" href="./noticias.html">Noticias</a>
-                      </li>
-                    </ul>
-                  </li>
-              </div>
-            </div>
-          </nav>
-     
+
 
   
-    <main class="wrapper" >
+    <main class="wrapper" > 
       <div class="container-fluid">
           <div class="noti container text-center">
             <div class="title">
               <h2 class="title">Videos que podrían interesarte...</h2>
             </div>
       <div class="espaciovids">
-        <h3>Nuevo plan de pagos de AFIP</h3>
+        <h3 style="padding: 20px 20px">Nuevo plan de pagos de AFIP</h3>
         <div class="ytvids">
       <iframe
        
@@ -119,7 +120,7 @@
     </div>
       </div>
       <div class="espaciovids">
-      <h3>Impuesto a las Ganancias Mayo 2023</h3>
+      <h3 style="padding: 20px 20px">Impuesto a las Ganancias Mayo 2023</h3>
       <div class="ytvids">
       <iframe
       
@@ -135,7 +136,6 @@
     </div>
   </div>
   </div>
-
     </main>
 
     <footer class="bg-dark text-white pt-5 pb-4">
@@ -202,9 +202,20 @@
           </div>
         </div>
       </div>
-
-
     </footer>
+    <script>
+      const navEl = document.querySelector('.navbar');
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 56){
+          navEl.classList.add('navbar-scrolled');
+        } else if(window.scrollY < 56){
+          navEl.classList.remove ('navbar-scrolled');
+        }
+
+
+      });
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

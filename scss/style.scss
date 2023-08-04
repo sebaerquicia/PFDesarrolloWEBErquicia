@@ -28,6 +28,10 @@ main.wrapper{
    box-shadow: 0 3px 10px rgba(33, 37, 41, 0.2);
 
 }
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 /* todo el cuerpo */
 /* boton wsp */
 .whatsapp {
@@ -49,7 +53,7 @@ main.wrapper{
   }
 /* BARRA DE NAVEGACION */
 .navbar{
-    transition: all 0.6s;
+    transition: all 0.2s;
 }
 
 .navbar-scrolled{
@@ -129,7 +133,8 @@ div.tarjetas {
 
 div.title{
     display: flex;
-    padding-top: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     align-items: center;
     justify-content: center;
 }
@@ -162,6 +167,16 @@ section.conoce{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+}
+section.cartas{
+        
+    background-image: url(../img/fondoazul.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
 }
 div.conocenos {
 
