@@ -260,6 +260,11 @@ footer.pieDePagina h4, footer.pieDePagina p {
 }
 
 /* FIN FOOTER */
+/* carousels */
+div.carousel {
+  padding: 20px 15px;
+}
+
 /* MEDIA QUERIES QUE FUERON REEMPLAZADOS POR BOOTSTRAP EN SU MAYORIA */
 /* Tamanio de fuentes */
 /* Gama de colores */
