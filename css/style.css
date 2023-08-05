@@ -55,8 +55,7 @@ section {
   padding-bottom: 50px;
 }
 
-/* todo el cuerpo */
-/* boton wsp */
+/* BOTON WSP */
 .whatsapp {
   position: fixed;
   width: 60px;
@@ -120,7 +119,6 @@ header.cabecera {
   align-items: center;
   object-fit: cover;
   position: relative;
-  /* width: 100vw; */
   height: 280px;
   background-image: url(../img/fondo.jpeg);
   background-position: center 0;
@@ -156,7 +154,7 @@ h2.title {
   border-radius: 8px;
 }
 
-/* estilo del contenedor servicios */
+/* ESTILOS DEL CONTENEDOR SERVICIOS */
 section.contenedorPadre {
   background-color: #9DB2BF;
   padding: 10px;
@@ -218,7 +216,6 @@ section.contacttable {
   align-items: center;
 }
 
-/* fin estilo contacto */
 /* CONGRESOS */
 .c-item {
   height: 480px;
@@ -229,7 +226,6 @@ section.contacttable {
   object-fit: cover;
 }
 
-/* Fin congresos */
 /* NOTICIAS */
 div.noti {
   padding-top: 20px;
@@ -273,8 +269,7 @@ footer.pieDePagina h4, footer.pieDePagina p {
   height: 50px;
 }
 
-/* FIN FOOTER */
-/* carousels */
+/* CAROUSELS */
 div.carousel {
   padding: 20px 15px;
 }

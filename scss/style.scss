@@ -32,8 +32,8 @@ section{
     padding-top: 50px;
     padding-bottom: 50px;
 }
-/* todo el cuerpo */
-/* boton wsp */
+
+/* BOTON WSP */
 .whatsapp {
     position:fixed;
     width:60px;
@@ -51,6 +51,7 @@ section{
   .whatsapp-icon {
     margin-top:13px;
   }
+
 /* BARRA DE NAVEGACION */
 .navbar{
     transition: all 0.2s;
@@ -59,8 +60,8 @@ section{
 .navbar-scrolled{
     background-color: #212529 ;
 }
-/* ESTILOS DEL HEADER */
 
+/* ESTILOS DEL HEADER */
 h1 {
     color: $colorPrincipal;
     font-size: $fontBig ;
@@ -74,11 +75,7 @@ h1 {
     padding-top: 50px;
 }
 
-
-
-header.cabecera1 {
-    
-   
+header.cabecera1 { 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,15 +90,14 @@ header.cabecera1 {
     background-attachment: fixed;
 
 } 
-header.cabecera {
-    
+
+header.cabecera {    
     padding: 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     object-fit: cover;
     position: relative;
-    /* width: 100vw; */
     height: 280px;
     background-image: url(../img/fondo.jpeg);
     background-position: center 0;
@@ -119,7 +115,6 @@ div.imagenPrincipal {
 
 }
 
-
 div.tarjetas {
     padding: 20px 20px 20px 20px;
     
@@ -127,7 +122,6 @@ div.tarjetas {
 }
 
 /* ESTILOS DE LA PAGINA SERVICIOS */
-
 div.title{
     display: flex;
     padding-top: 40px;
@@ -135,14 +129,13 @@ div.title{
     align-items: center;
     justify-content: center;
 }
-h2.title{
-    
+h2.title{   
     background-color: $colorCaja;
     padding: 10px 10px;
     border-radius: 8px;
 }
 
-/* estilo del contenedor servicios */
+/* ESTILOS DEL CONTENEDOR SERVICIOS */
 section.contenedorPadre {
     background-color:$colorSecundario;
     padding: 10px;
@@ -157,8 +150,7 @@ section.contenedorPadre {
 /* FIN ESTILOS SERVICIOS */
 
 /* Estilos de Conocenos */
-section.conoce{
-    
+section.conoce{    
     background-image: url(../img/bluebg.png);
     background-position: center 0;
     background-repeat: no-repeat;
@@ -167,8 +159,7 @@ section.conoce{
     padding-top: 80px;
 
 }
-section.cartas{
-        
+section.cartas{        
     background-image: url(../img/fondoazul.png);
     background-position: center 0;
     background-repeat: no-repeat;
@@ -177,7 +168,6 @@ section.cartas{
 
 }
 div.conocenos {
-
     h2{
         background-color: $colorCaja;
         padding: 10px;
@@ -190,8 +180,6 @@ div.conocenos {
     padding-top: 15px;
     padding-bottom: 15px; 
     }
-   
- 
 }
 /* MAPA */
 div.mapa {
@@ -199,8 +187,7 @@ div.mapa {
     text-align: center;
     padding: 10px;
     h2 {
-        padding-bottom: 20px;
-       
+        padding-bottom: 20px;       
     }
 }
 
@@ -211,9 +198,8 @@ section.contacttable{
     padding: 50px;
     background-color: $colorTabla;
     align-items: center;
-
 }
-/* fin estilo contacto */
+
 
 /* CONGRESOS */
 .c-item{
@@ -223,7 +209,7 @@ section.contacttable{
     height: 100%;
     object-fit: cover;
 }
-/* Fin congresos */
+
 
 /* NOTICIAS */
 div.noti{
@@ -247,6 +233,7 @@ div.espaciovids {
     padding-top: 10px;
     padding-bottom: 20px;
 }
+
 /* FOOTER */
 footer.pieDePagina{
     display: flex;
@@ -259,9 +246,6 @@ footer.pieDePagina{
     h4, p{
         color:white
     }
-   
-   
-
 }
 .redes{
     img{
@@ -269,8 +253,8 @@ footer.pieDePagina{
         height: 50px;
     }
 }
-/* FIN FOOTER */
-/* carousels */
+
+/* CAROUSELS */
 div.carousel{
     padding: 20px 15px;
 }
